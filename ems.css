@@ -1,0 +1,471 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.containr{
+    padding-top: 40px;
+    position: bottom;
+    width: 800px;
+    height: 920px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+.containr .employee-info{
+    width: 100%;
+    padding: 40px;
+}
+.employee-info h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+input{
+    height: 60px;
+    border-bottom: 2px solid #162938;
+    margin: 2px 0;
+    color: #162938;
+    margin-left: 26px;
+}
+input[type="text"]{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 510;
+
+}
+input[type="number"]{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 510;
+}
+input[type="email"]{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 510;
+}
+input[type="tel"]{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 510;
+}
+input[type="password"]{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 510;
+}
+.btni{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 510;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('eliote5.jpg') no-repeat;
+    background-size: 1370px;
+    background-position: top;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(36, 101, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+}
+.navbar a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 510;
+    margin-left: 20px;
+}
+.menubar a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 510;
+    margin-left: 20px;
+}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width:100%;
+    height: 3px;
+    background: #fff;
+    bottom: -6px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s; 
+}
+.menubar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width:100%;
+    height: 3px;
+    background: #fff;
+    bottom: -6px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s; 
+}
+.navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.menubar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navbar .btnLogin{
+    position: relative;
+    width: 90px;
+    height: 45px;
+    margin-left: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 510;
+    transition: .5s;
+}
+.navbar .btnLogin a{
+    padding-right: 19px;
+}
+.menubar .btnLogin{
+    position: relative;
+    width: 90px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 510;
+    margin-left: 40px;
+    transition: .5s;
+}
+.menubar .btnLogin a{
+    padding-right: 19px;
+}
+.navbar .btnLogin:hover{
+    background: #fff;
+    color: rgba(21, 34, 105, 0.521);
+}
+.menubar .btnLogin:hover{
+    background: #fff;
+    color: rgba(21, 34, 105, 0.521);
+}
+body{
+    display: flex;
+    min-height: 180vh;
+    align-items: center;
+    justify-content: center;
+    background: url('eliote5.jpg') no-repeat;
+    background-size: 1370px;
+    background-position: top;
+}
+.Login{
+    margin-bottom: 200px;
+    position: relative;
+    width: 510px;
+    height: 600px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login .loginform-box{
+    width: 100%;
+    padding: 40px;
+
+}
+
+.loginform-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.loginform-box h1{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    height: 60px;
+    border-bottom: 2px solid #162938;
+    margin: 20px 0;
+}
+.input-box label{
+    font-size: 1em;
+    background-color: transparent;
+    color: #162938;
+    font-weight: 510;
+  
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 510;
+
+}
+.rmbr-fgt{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 510;
+    margin: -15px 0 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.rmbr-fgt label input{
+    accent-color: yellow;
+}
+.rmbr-fgt a{
+    text-decoration: none;
+    color: black;
+}
+.rmbr-fgt a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    background: #162938;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 510;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.login-regs{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 510;
+    margin: 20px 0 15px;
+}
+.login-regs p a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700px;
+}
+.login-regs p a:hover{
+    text-decoration: underline;
+}
+.nav a{
+    margin-right: 600px;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 510;
+    margin-left: 40px;
+}
+.containr{
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+form li{
+    color: #162938;
+    font-weight: 900;
+} 
+input[type="text"]::placeholder{
+    color: #fff;
+}
+input[type="email"]::placeholder{
+    color: #fff;
+}
+input[type="tel"]::placeholder{
+    color: #fff;
+}
+input[type="password"]::placeholder{
+    color: #fff;
+}
+input[type="number"]::placeholder{
+    color: #fff;
+}
+.input-boxx{
+    border-bottom: 2px solid #162938;
+    width: 100%;
+    position: relative;
+    height: 50px;
+}
+form{
+    padding-bottom: 30px;
+}
+#attendanceForm{
+    margin-bottom: 200px;
+    position: relative;
+    width: 1000px;
+    height: 140px;
+    background: rgb(253, 249, 249);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(255, 255, 255, .5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  h1 {
+    padding-right: 190px;
+    text-align: center;
+    color: #162938;
+  }
+
+  table {
+    width: 1000px;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: none;
+    background: rgb(255, 255, 255);
+  }
+  .bton{
+    width: 90px;
+      height: 40px;
+    background: #162938;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 510; 
+    margin-top: 32px;
+  }
+  .inputbox{
+    height: 60px;
+    border-bottom: 2px solid #162938;
+    margin: 20px 0;
+  }
+  .inputbox label{
+    font-size: 1em;
+    background-color: transparent;
+    color: #162938;
+    font-weight: 510;
+  }
+  .inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:black;
+    font-weight: 510;
+  }
+  .date{
+    height: 60px;
+    margin: 20px 0;
+  }
+  .date label{
+    font-size: 1em;
+    color: #162938;
+    font-weight: 510;
+    margin-left: 40px;
+  }
+  .date input{
+    width: 65%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:black;
+    font-weight: 510;
+    padding-left: 8px;
+  }
+  .status label{
+    font-size: 1em;
+    color: #162938;
+    font-weight: 510;
+    padding-left: 7px;
+  }
+  #status{
+     margin-top: 16px;
+    width: 70%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color:black;
+    font-weight: 510;
+  }
+  

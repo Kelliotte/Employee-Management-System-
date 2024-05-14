@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Attendance Tracker</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\Administrator\Desktop\new project\static\ems.css">
+</head>
+<body>
+  <section id="top">
+    <div class="container">
+        <div class="header">
+            <h1 class="logo"><b>UROffice</b></h1>
+            <div class="navbar">
+                <a href="index2.html">Home</a>
+                <a href="C:\Users\Administrator\Desktop\new project\templates\addemploy.html">Employee registration</a>
+                <a href="C:\Users\Administrator\Desktop\new project\templates\home.html">Employee dashboard</a>
+                <a href="">Admin dashboard</a>
+                <button class="btnLogin"><a href="C:\Users\Administrator\Desktop\new project\templates\login.html">Login</a></button>
+            </div>
+        </header>
+      </section>
+  <section id="body">
+  <h1>Employee Attendance Tracker</h1>
+  <table id="attendanceTable">
+    <thead>
+      <tr>
+        <th>Employee Name</th>
+        <th>Date</th>
+        <th>Attendance Status</th>
+      </tr>
+    </thead>
+    <tbody id="attendanceRecords">
+    </tbody>
+  </table>
+  <p></p>
+  <form id="attendanceForm">
+    <div class="inputbox">
+    <label for="employeeName">Employee Name:</label>
+    <input type="text" id="employeeName" required>
+    </div>
+    <div class="date">
+    <label for="date">Date:</label>
+    <input type="date" id="date" required>
+    </div>
+    <div class="status">
+    <label for="status">Attendance Status:</label>
+    <select id="status" required>
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+    </div>
+    <button type="submit" class="bton">Submit</button>
+  </form>
+  </section>
+</body>
+</html>
+</body>
+</html>

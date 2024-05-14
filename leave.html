@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leave management</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Administrator\Desktop\new project\static\ems.css">
+</head>
+<body>
+    <section id="top">
+        <div class="container">
+            <div class="header">
+                <h1 class="logo"><b>UROffice</b></h1>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="C:\Users\Administrator\Desktop\new project\templates\addemploy.html">Employee registration</a>
+                    <a href="C:\Users\Administrator\Desktop\new project\templates\home.html">Employee dashboard</a>
+                    <a href="">Admin dashboard</a>
+                    <button class="btnLogin"><a href="C:\Users\Administrator\Desktop\new project\templates\login.html">Login</a></button>
+                </div>
+            </header>
+        </section>
+    <h1> LEAVE MANAGEMENT</h1>
+    <form>
+        <div class="inputbox">
+        <label for="ename">Employee name</label>
+        <input type="text" id="ename" required>
+        </div>
+        <div class="date">
+        <label for="sdate">Leave start date</label>
+        <input type="date" id="sdate" required>
+        </div>
+        <div class="date">
+        <label for="edate">Leave end date</label>
+        <input type="date" id="edate" required>
+        </div>
+        <div class="inputbox">
+        <label for="ltype">Leave type</label>
+        <select id="ltype" required>
+            <option value="Personal">Personal</option>
+            <option value="Sickness">Sickness</option>
+            <option value="holiday">Holiday</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="inputbox">
+          <label for="reason">Reason</label>
+          <input type="text" id="reason" required>
+          </div>
+    </form>
+    
+</body>
+</html>
